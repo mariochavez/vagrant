@@ -1,4 +1,4 @@
-require 'vagrant'
+#require 'vagrant'
 
 desc 'Build base box'
 task :install => ['box:create', 'vm:configure']
