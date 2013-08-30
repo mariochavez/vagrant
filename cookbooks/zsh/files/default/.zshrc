@@ -1,6 +1,11 @@
 # Path
 export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:$PATH
 
+# Plugins
+for plugin ($HOME/.zsh/*/); do
+  fpath=($plugin $fpath)
+done
+
 # Completion
 setopt COMPLETE_IN_WORD
 autoload -U compinit
